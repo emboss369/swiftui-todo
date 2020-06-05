@@ -9,20 +9,27 @@
 import SwiftUI
 
 struct CategoryImage: View {
+    
+    var category: TodoEntity.Category
+    
+    init(_ category: TodoEntity.Category?) {
+        self.category = category ?? .ImpUrg_1st
+    }
+    
     var body: some View {
-        Image(systemName: "tortoise.fill")
+        Image(systemName: category.image())
             .resizable()
             .scaledToFit()
             .foregroundColor(.white)
             .padding(2.0)
             .frame(width: 30, height: 30)
-            .background(Color(#colorLiteral(red: 0.2392156869, green: 0.6745098233, blue: 0.9686274529, alpha: 1)))
+            .background(category.color())
             .cornerRadius(6.0)
     }
 }
 
 struct CategoryImage_Previews: PreviewProvider {
     static var previews: some View {
-        CategoryImage()
+        CategoryImage(TodoEntity.Category.ImpUrg_1st)
     }
 }
