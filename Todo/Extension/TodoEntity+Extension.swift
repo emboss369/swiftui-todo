@@ -9,7 +9,31 @@
 import CoreData
 import SwiftUI
 
+extension TodoEntity: Identifiable{}
 extension TodoEntity {
+    
+    static func create(in managedObjectContext: NSManagedObjectContext,
+                       category: Category,
+                       task: String,
+                       time: Date? = Date()){
+        let todo = self.init(context: managedObjectContext)
+        print(task)
+        todo.time = time
+        todo.category = category.rawValue
+        todo.task = task
+        todo.state = State.todo.rawValue
+        todo.id = UUID().uuidString
+        
+        do {
+            try  managedObjectContext.save()
+        } catch {
+            let nserror = error as NSError
+            fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
+        }
+    }
+
+    
+    
     enum Category: Int16 {
         case ImpUrg_1st     // Important & Urgent (第Ⅰ領域）
         case ImpNUrg_2nd    // Important & Not Urgent (第Ⅱ領域）
