@@ -14,11 +14,25 @@ struct CategoryView: View {
     @State var showList = false
     @Environment(\.managedObjectContext) var viewContext
     @State var addNewtask = false
+    
+    fileprivate func update() {
+        self.numberOfTasks = TodoEntity.count(in: self.viewContext,
+                                              category: self.category)
+    }
+    
     var body: some View {
-        VStack(alignment: .leading) {
+        
+        let gradient = Gradient(colors: [category.color(),
+                                         category.color().opacity(0.8)])
+        let linear = LinearGradient(gradient: gradient,
+                                    startPoint: .top,
+                                    endPoint: .bottom)
+        
+        
+        return VStack(alignment: .leading) {
             Image(systemName: category.image())
                 .font(.largeTitle)
-                .sheet(isPresented: $showList) {
+                .sheet(isPresented: $showList, onDismiss: {self.update()}) {
                     TodoList(category: self.category)
                         .environment(\.managedObjectContext, self.viewContext)
                 }
@@ -29,7 +43,7 @@ struct CategoryView: View {
                 self.addNewtask = true
             }) {
                 Image(systemName: "plus")
-            }.sheet(isPresented: $addNewtask) {
+            }.sheet(isPresented: $addNewtask, onDismiss: {self.update()}) {
                 NewTask(category: self.category.rawValue)
                     .environment(\.managedObjectContext, self.viewContext)
             }
@@ -38,11 +52,15 @@ struct CategoryView: View {
             .padding()
         .frame(maxWidth:.infinity, minHeight: 150)
             .foregroundColor(.white)
-            .background(category.color())
+            .background(linear)
             .cornerRadius(20)
-        .onTapGesture {
-            self.showList = true
-        }
+            .onTapGesture {
+                self.showList = true
+            }
+            .onAppear {
+                self.update()
+                
+            }
     }
 }
 
