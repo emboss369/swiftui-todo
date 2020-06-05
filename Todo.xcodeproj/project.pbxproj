@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		41006E582471077200B502CA /* QuickNewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41006E572471077200B502CA /* QuickNewTask.swift */; };
 		41006E5A247124C200B502CA /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41006E59247124C100B502CA /* TodoList.swift */; };
+		41164DDE247F8F5C0027B2DD /* EditTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41164DDD247F8F5C0027B2DD /* EditTask.swift */; };
 		415012D72477EBA200171783 /* NewTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415012D62477EBA200171783 /* NewTask.swift */; };
 		416074862474BF3A00DE4540 /* TodoDetailRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416074852474BF3A00DE4540 /* TodoDetailRow.swift */; };
 		416E54FF246BF84000677609 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E54FE246BF84000677609 /* Color+Extension.swift */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		41006E572471077200B502CA /* QuickNewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickNewTask.swift; sourceTree = "<group>"; };
 		41006E59247124C100B502CA /* TodoList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		41164DDD247F8F5C0027B2DD /* EditTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTask.swift; sourceTree = "<group>"; };
 		415012D62477EBA200171783 /* NewTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTask.swift; sourceTree = "<group>"; };
 		416074852474BF3A00DE4540 /* TodoDetailRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailRow.swift; sourceTree = "<group>"; };
 		416E54FE246BF84000677609 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				41006E59247124C100B502CA /* TodoList.swift */,
 				416074852474BF3A00DE4540 /* TodoDetailRow.swift */,
 				415012D62477EBA200171783 /* NewTask.swift */,
+				41164DDD247F8F5C0027B2DD /* EditTask.swift */,
 				41EC1F78246938AC00F3C249 /* Assets.xcassets */,
 				41EC1F7D246938AC00F3C249 /* LaunchScreen.storyboard */,
 				41EC1F80246938AD00F3C249 /* Info.plist */,
@@ -192,6 +195,7 @@
 			files = (
 				41EC1F70246938AB00F3C249 /* AppDelegate.swift in Sources */,
 				41006E582471077200B502CA /* QuickNewTask.swift in Sources */,
+				41164DDE247F8F5C0027B2DD /* EditTask.swift in Sources */,
 				416E54FF246BF84000677609 /* Color+Extension.swift in Sources */,
 				41006E5A247124C200B502CA /* TodoList.swift in Sources */,
 				419344A2247E97C8002448C7 /* Binding+Extension.swift in Sources */,
