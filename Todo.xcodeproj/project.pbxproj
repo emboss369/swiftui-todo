@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4193012A246A4016009853A4 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41930129246A4016009853A4 /* CheckBox.swift */; };
 		41DC65D224696CBE00C3DD76 /* CategoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DC65D124696CBE00C3DD76 /* CategoryImage.swift */; };
 		41EC1F70246938AB00F3C249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC1F6F246938AB00F3C249 /* AppDelegate.swift */; };
 		41EC1F72246938AB00F3C249 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC1F71246938AB00F3C249 /* SceneDelegate.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		41930129246A4016009853A4 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		41DC65D124696CBE00C3DD76 /* CategoryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImage.swift; sourceTree = "<group>"; };
 		41EC1F6C246938AB00F3C249 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41EC1F6F246938AB00F3C249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				41EC1F71246938AB00F3C249 /* SceneDelegate.swift */,
 				41EC1F76246938AB00F3C249 /* ContentView.swift */,
 				41DC65D124696CBE00C3DD76 /* CategoryImage.swift */,
+				41930129246A4016009853A4 /* CheckBox.swift */,
 				41EC1F78246938AC00F3C249 /* Assets.xcassets */,
 				41EC1F7D246938AC00F3C249 /* LaunchScreen.storyboard */,
 				41EC1F80246938AD00F3C249 /* Info.plist */,
@@ -154,6 +157,7 @@
 			files = (
 				41EC1F70246938AB00F3C249 /* AppDelegate.swift in Sources */,
 				41EC1F75246938AB00F3C249 /* Todo.xcdatamodeld in Sources */,
+				4193012A246A4016009853A4 /* CheckBox.swift in Sources */,
 				41EC1F77246938AB00F3C249 /* ContentView.swift in Sources */,
 				41DC65D224696CBE00C3DD76 /* CategoryImage.swift in Sources */,
 				41EC1F72246938AB00F3C249 /* SceneDelegate.swift in Sources */,
