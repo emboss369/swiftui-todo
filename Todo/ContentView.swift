@@ -35,7 +35,11 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let context = (UIApplication.shared.delegate as! AppDelegate)
+        .persistentContainer.viewContext
+
     static var previews: some View {
         ContentView()
+            .environment(\.managedObjectContext, context)
     }
 }
