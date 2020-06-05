@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		416E54FF246BF84000677609 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E54FE246BF84000677609 /* Color+Extension.swift */; };
+		416E5501246E264700677609 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416E5500246E264700677609 /* UserView.swift */; };
 		4193012A246A4016009853A4 /* CheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41930129246A4016009853A4 /* CheckBox.swift */; };
 		41DC65D224696CBE00C3DD76 /* CategoryImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DC65D124696CBE00C3DD76 /* CategoryImage.swift */; };
 		41EC1F70246938AB00F3C249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41EC1F6F246938AB00F3C249 /* AppDelegate.swift */; };
@@ -19,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		416E54FE246BF84000677609 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		416E5500246E264700677609 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		41930129246A4016009853A4 /* CheckBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBox.swift; sourceTree = "<group>"; };
 		41DC65D124696CBE00C3DD76 /* CategoryImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImage.swift; sourceTree = "<group>"; };
 		41EC1F6C246938AB00F3C249 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		416E54FD246BF7E500677609 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				416E54FE246BF84000677609 /* Color+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		41EC1F63246938AB00F3C249 = {
 			isa = PBXGroup;
 			children = (
@@ -62,11 +74,13 @@
 		41EC1F6E246938AB00F3C249 /* Todo */ = {
 			isa = PBXGroup;
 			children = (
+				416E54FD246BF7E500677609 /* Extension */,
 				41EC1F6F246938AB00F3C249 /* AppDelegate.swift */,
 				41EC1F71246938AB00F3C249 /* SceneDelegate.swift */,
 				41EC1F76246938AB00F3C249 /* ContentView.swift */,
 				41DC65D124696CBE00C3DD76 /* CategoryImage.swift */,
 				41930129246A4016009853A4 /* CheckBox.swift */,
+				416E5500246E264700677609 /* UserView.swift */,
 				41EC1F78246938AC00F3C249 /* Assets.xcassets */,
 				41EC1F7D246938AC00F3C249 /* LaunchScreen.storyboard */,
 				41EC1F80246938AD00F3C249 /* Info.plist */,
@@ -156,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				41EC1F70246938AB00F3C249 /* AppDelegate.swift in Sources */,
+				416E54FF246BF84000677609 /* Color+Extension.swift in Sources */,
 				41EC1F75246938AB00F3C249 /* Todo.xcdatamodeld in Sources */,
+				416E5501246E264700677609 /* UserView.swift in Sources */,
 				4193012A246A4016009853A4 /* CheckBox.swift in Sources */,
 				41EC1F77246938AB00F3C249 /* ContentView.swift in Sources */,
 				41DC65D224696CBE00C3DD76 /* CategoryImage.swift in Sources */,
